@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "maracaai"
+version = "0.1.0"
+description = "AI voice chatbot using Hack Club AI?"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["openrouter", "SpeechRecognition", "pyttsx3", "python-dotenv"]
+
+[project.scripts]
+shutup = "maraca.main:main"
