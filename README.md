@@ -4,7 +4,8 @@ A voice-based assistant powered by Hack Clubs's [AI](https://ai.hackclub.com), `
 
 _this project was originally called 'Tamborine AI' and was submitted to Hack Club's [Summer of Making](summer.hackclub.com).
 
-! __NOTE__ This is being sumbitted to Hack Club's [Flavortown](flavortown.hackclub.com) 
+> [!NOTE]
+> This is being sumbitted to Hack Club's [Flavortown](flavortown.hackclub.com) 
 ---
 
 ## Features
