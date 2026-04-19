@@ -79,24 +79,26 @@ messages = [
         )
     }
 ]
+def main():
+    while True:
+        user_input = speech_to_text()
+        if not user_input:
+            continue
 
-while True:
-    user_input = speech_to_text()
-    if not user_input:
-        continue
-
-    if user_input.strip().lower() == "exit" or user_input.strip().lower() == "end":
-        break
-    
-    try:
-        reply = call_api(messages, user_input)
-        speak(reply)
-    except Exception as exc:
-        error_text = str(exc)
-        if "Authentication failed" in error_text or "Status 401" in error_text:
-            speak("Authentication failed. Please check your API key. Paste it below, then the app will end. Open it again and you'll be good to go.")
-            set_key()
+        if user_input.strip().lower() == "exit" or user_input.strip().lower() == "end":
             break
-        speak(f"API error: {error_text}")
-        speak("Please check your internet connection or contact the app's developer if issues persist.")
-speak("Chat ended.")
+        
+        try:
+            reply = call_api(messages, user_input)
+            speak(reply)
+        except Exception as exc:
+            error_text = str(exc)
+            if "Authentication failed" in error_text or "Status 401" in error_text:
+                speak("Authentication failed. Please check your API key. Paste it below, then the app will end. Open it again and you'll be good to go.")
+                set_key()
+                break
+            speak(f"API error: {error_text}")
+            speak("Please check your internet connection or contact the app's developer if issues persist.")
+    speak("Chat ended.")
+if __name__ == "__main__":
+    main()
