@@ -60,17 +60,18 @@ python maracaai/main.py
 
 ---
 
-## 🛜 AI Transparency
+## AI Transparency
 
 This project obviously uses AI but I want to keep the use of AI in the development of projects transparent.
 
 ### Ai Usage
 
 - Polishing and debuging code
-- Testing code (API calls)
+- Testing code (API calls)#
+- AI was used in the orignial Tamberine AI `README.md` and i forgot to change title formatting (content is new) - sorry for confussion shipwrights!
 
 ---
-## ⚠️ Disclamer
+## Disclamer
 
 All content is created using `qwen/qwen3-32b`
 
@@ -78,7 +79,7 @@ All content is created using `qwen/qwen3-32b`
 
 ---
 
-## 💼 License
+## License
 
 [_MIT License_](https://github.com/hippogriff101//blob/main/LICENSE)
 
