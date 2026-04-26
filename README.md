@@ -30,6 +30,8 @@ _This project was originally called 'Tamborine AI' and was submitted to Hack Clu
 
 - Hack Club AI API Key
 
+- Python 3.13 or 3.12
+
 ---
 
 ## Installation Instructions
